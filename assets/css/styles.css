@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+img{
+    max-width: 100%;
+}
+:root {
+    --red-principal: #E86060;
+    --dark-red-color: #662323;
+    --soft-gray: #BDBDBD;
+    --gray: #828282;
+    --light-red: #FF7676;
+    --footer-color: #EB5757;
+    --font: 'Quicksand';
+}
+h1,h2,h3,h4,h5,h6{
+    color: #FFFFFF;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    background: var(--primary-color);
+}
+aside{
+    background: var(--dark-red-color);
+    padding: 0 40px;
+}
+aside img{
+    padding-top: 50px;
+}
+aside .group{
+    padding-top: 30px;
+}
+aside h2{
+    font-size: 22px;
+    display: block;
+    padding-bottom: 5px;
+}
+aside ul li{
+    font-weight: lighter;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-bottom: 8px;
+    list-style: none;
+}
+aside ul li:hover{
+    color: var(--red-principal);
+    cursor: pointer;
+    font-weight: bold;
+}
+.header_main{
+    height: 250px;
+    max-height: 250px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 40px;
+    display: flex;
+    font-weight: lighter;
+}
+.header_main_img{
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    max-height: 250px;
+}
+.header_main_description{
+    background: linear-gradient(0deg, rgba(167, 0, 0, 0.7), rgba(167, 0, 0, 0.7)), url(../img/adele.jpg) center / cover;
+    opacity: 0.5;   
+    padding: 40px 21px 21px 32px;
+    color: #FFFFFF;
+}
+.header_main_description_tittle{
+    font-size: 22px;
+    font-weight: 700;
+}
+.header_main_description_album{
+    font-size: 14px;
+}
+.header_main_description_followers{
+    font-size: 10px;
+    padding-left: 16px;
+    color: var(--dark-red-color);
+}
+.header_main_description_biografy{
+    font-size: 12px;
+    padding: 20px 0 58px;
+}
+.header_main_description_btn_play, .header_main_description_btn_follow{
+    width: 117px;
+    height: 31px;
+    border: none;
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-size: 14px;
+    background: var(--red-principal);
+}
+.header_main_description_btn_follow{
+    margin: 0 20px;
+    background: none;
+    border: 1px solid var(--red-principal) ;
+    color: var(--red-principal);
+}
+.header_main_description_btn_options{
+    background: none;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+}
+.nav_main{
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+    margin: 30px 40px 40px;
+    align-items: center;
+    position: relative;
+}
+.nav_main p{
+    color: red;
+    font-weight: 700;
+    position: absolute;
+    bottom: -30px;
+    left: 16px;
+}
+.nav_main .none{
+    display: none;
+}
+.nav_main_search{
+    width: 56%;
+    height: 100%;
+    max-width: 524px;
+    position: relative;
+}
+.nav_main_search form{
+    height: 100%;
+}
+.nav_main_search input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--gray);
+    border-radius: 100px;
+    padding-left: 16px;
+    font-size: 18px;
+    outline: none;
+}
+.nav_main_search input::placeholder{
+    color: var(--soft-gray);
+}
+.nav_main_search i{
+    font-size: 18px;
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    color: var(--soft-gray);
+}
+.nav_main_user{
+    width: 12.2%;
+    max-width: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_main_user button{
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #4F4F4F;
+}
+.nav_main_user button:hover{
+    cursor: pointer;
+}
+.nav_main_user i{
+    color: var(--red-principal);
+    font-size: 14px;
+}
+.results_main{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 40px 216px;
+}
+.results_main_tittle{
+    color: var(--red-principal);
+}
+.results_main_item{
+    width: 100%;
+    max-width: 160px;
+    height: 100%;
+    max-height: 206px;
+    margin-bottom: 20px;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: var(--footer-color);
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    color: #FFFFFF;
+}
+footer img{
+    width: 100px;
+    height: 100px;
+}
+footer .footer_player_image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+footer .footer_player_description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+}
+footer button{
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 22px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.button-play{
+    background: var(--light-red);
+    border-radius: 100px;
+    margin: 0 20px;
+    width: 60px;
+    height: 60px;
+}
+.button-play i{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}

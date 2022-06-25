@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reproductor - FractalUp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <aside>
+        <div class="group_image">
+          <img src="assets/img/foxbel-music.png" alt="Logo" />
+        </div>
+        <div class="group">
+          <h2>Mi Librería</h2>
+          <ul>
+            <li>Recientes</li>
+            <li>Artistas</li>
+            <li>Álbums</li>
+            <li>Canciones</li>
+            <li>Estaciones</li>
+          </ul>
+        </div>
+        <div class="group">
+          <h2>PlayList</h2>
+          <ul>
+            <li>Metal</li>
+            <li>Para bailar</li>
+            <li>Rock 90s</li>
+            <li>Baladas</li>
+          </ul>
+        </div>
+      </aside>
+      <main>
+        <div class="nav_main">
+          <p class="nav_main_message none" id="nav_main_message">
+            Ingrese el nombre de la canción
+          </p>
+          <div class="nav_main_search">
+            <form action="" id="nav_main_search_form">
+              <input type="text" placeholder="Buscar" id="input_search" />
+            </form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="nav_main_user">
+            <i class="fa-solid fa-user"></i><button>Francisco M.</button>
+          </div>
+        </div>
+        <div class="header_main">
+          <div class="header_main_img">
+            <img
+            src="https://e-cdns-images.dzcdn.net/images/artist/76b19db9e6d06f95b25abb2da521b3b8/500x500-000000-80-0-0.jpg""
+            alt="" id="presentation_image" />
+          </div>
+          <div class="header_main_description">
+            <h3 class="header_main_description_tittle" id="artist_name">
+              Morat
+            </h3>
+            <p class="header_main_description_album">
+              Lo mejor de <span id="artist_name2">Morat</span>
+              <span class="header_main_description_followers"
+                >321,123 seguidores</span
+              >
+            </p>
+            <p class="header_main_description_biografy">
+              Adele Laurie Blue Adkins (Tottenham, Londres, Inglaterra, 5 de
+              mayo de 1988), conocida simplemente como Adele, es una cantante,
+              compositora y multinstrumentista británica.8​
+            </p>
+            <div class="header_main_description_buttons">
+              <button class="header_main_description_btn_play">
+                Reproducir</button
+              ><button class="header_main_description_btn_follow">Seguir</button
+              ><button class="header_main_description_btn_options">
+                <i class="fa-solid fa-ellipsis"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="results_main" id="results_main">
+          <!-- <h2 class="results_main_tittle">Resultados</h2> -->
+        </div>
+      </main>
+      <footer>
+        <div class="footer_player_image">
+          <img src="assets/img/adele.jpg" alt="" id="smallImage" />
+        </div>
+        <div class="footer_player_description">
+          <div class="footer_player_description_tittle">
+            <b class="footer_player_description_tittle_song" id="nameSong"></b>
+            <p
+              class="footer_player_description_tittle_album"
+              id="descriptionSong"
+            >
+              Artista - Álbum
+            </p>
+          </div>
+          <div class="footer_player_description_controls">
+            <button><i class="fa-solid fa-backward-step"></i></button
+            ><button class="button-play">
+              <i class="fa-solid fa-play"></i></button
+            ><button><i class="fa-solid fa-forward-step"></i></button>
+          </div>
+          <div class="footer_player_description_controls_volume">
+            <input type="range" name="" id="" />
+            <button>
+              <i class="fa-solid fa-volume-off"></i
+              ><i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+  <script src="src/index.js"></script>
+</html>
